@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-canvas: #f2f2f2;
+  --color-ink: #111111;
+  --color-line: #e6e6e6;
+  --color-pill: #efefef;
+  --font-sans: Inter, system-ui, sans-serif;
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --radius-pill: 9999px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --card: #ffffff;
+  --card-foreground: #111111;
+  --popover: #ffffff;
+  --popover-foreground: #111111;
+  --primary: #111111;
+  --primary-foreground: #ffffff;
+  --secondary: #efefef;
+  --secondary-foreground: #111111;
+  --muted: #efefef;
+  --muted-foreground: #8a8a8a;
+  --accent: #efefef;
+  --accent-foreground: #111111;
+  --destructive: #111111;
+  --border: #e6e6e6;
+  --input: #e6e6e6;
+  --ring: #8a8a8a;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: Inter, system-ui, sans-serif;
+  }
+}
